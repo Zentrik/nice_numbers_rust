@@ -7,8 +7,15 @@ edition = "2021"
 
 [dependencies]
 criterion = "0.4.0"
+heapless = "0.7.16"
 malachite = "0.3.2"
 
 [[bench]]
 name = "benchmark"
 harness = false
+
+[profile.release]
+lto = true
+
+[profile.bench]
+lto = true
