@@ -7,7 +7,6 @@ edition = "2021"
 
 [dependencies]
 criterion = "0.4.0"
-heapless = "0.7.16"
 malachite = "0.3.2"
 
 [[bench]]
@@ -16,6 +15,9 @@ harness = false
 
 [profile.release]
 lto = true
+# debug=true
 
 [profile.bench]
 lto = true
+# debug=true
+# panic = "abort"

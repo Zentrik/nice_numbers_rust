@@ -1,7 +1,7 @@
 use malachite::{Natural, num::conversion::traits::Digits};
 use malachite::natural::exhaustive::exhaustive_natural_inclusive_range;
 
-// use heapless::Vec; // fixed capacity `std::Vec`
+// use heapless::Vec; // fixed capacity `std::Vec` // Probably only gives 1-2% performance boost
 
 
 fn is_nice(num: &Natural, base: i32, digits_indicator: &mut Vec<bool>) -> bool {
