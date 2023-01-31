@@ -17,7 +17,7 @@ fn main() {
 
     let _nice_numbers: Vec<Natural> = search_range(
         Natural::from(6371584264916 as u128),
-        Natural::from(6371584264916 + 10_u128.pow(5) as u128),
+        Natural::from(6371584264916 + 10_u128.pow(7) as u128),
         40,
         true
     );
